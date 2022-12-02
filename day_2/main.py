@@ -23,7 +23,7 @@ def change_line(line):
 		'Y': draw,
 		'Z': win}
 
-	return line[:2] + case[line[-1]][line[0]]
+	return line[:-1] + case[line[-1]][line[0]]
 
 
 def get_score(line):
